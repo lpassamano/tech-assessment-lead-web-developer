@@ -1,0 +1,53 @@
+{
+	"ticketTypes": [
+		{
+			"ticketTypeName": "Adolescent",
+			"id": 0,
+			"maxPurchasable": 5,
+			"price": "0.00",
+			"description": "For children below the age of 5"
+		},
+		{
+			"ticketTypeName": "Child",
+			"id": 1,
+			"maxPurchasable": 5,
+			"price": "5.00",
+			"description": "For children from ages 5 - 18"
+		},
+		{
+			"ticketTypeName": "Adult",
+			"id": 2,
+			"maxPurchasable": 10,
+			"price": "25.00",
+			"description": "For adults age 18 and over"
+		},
+		{
+			"ticketTypeName": "Senior",
+			"id": 3,
+			"maxPurchasable": 10,
+			"price": "10.00",
+			"description": "For seniors age 65 and over"
+		},
+		{
+			"ticketTypeName": "Member - Child",
+			"id": 4,
+			"maxPurchasable": 3,
+			"price": "3.00",
+			"description": "For children of members, from ages 5 - 18"
+		},
+		{
+			"ticketTypeName": "Member - Adult",
+			"id": 5,
+			"maxPurchasable": 5,
+			"price": "20.00",
+			"description": "For member adults, age 18 and over"
+		},
+		{
+			"ticketTypeName": "Member - Senior",
+			"id": 6,
+			"maxPurchasable": 5,
+			"price": "6.00",
+			"description": "For member seniors, age 65 and over"
+		}
+	]
+}
