@@ -30,7 +30,6 @@ Please extend the functionality of the API to provide the following features
 **Ticketing**
 
 - Expose an endpoint for retrieving all available tickets in the database
-- Add a feature to enable filtering for tickets that are member-only tickets, as well as tickets that are not member-only
 - Add a feature to enable filtering retrieving the details for a specific ticket -- given that you know its ID
 
 **Events**
@@ -38,7 +37,7 @@ Please extend the functionality of the API to provide the following features
 - Expose an endpoint for retrieving all available events in the database
 - Add a feature to enable searching for events that have a given keyword in it's event name
 - Add a feature to enable filtering for events whose category falls within a list of requested event categories
-- Enable filtering for events that fall within a provided start and end date range, meaning the start and end date of the event are within that range
+- Enable filtering for events where the `member_only` field is true/false
 - Enable retrieving the details for a specific event -- given you know its ID
 
 **Orders**
