@@ -13,11 +13,13 @@ Along with that, you're asked to provide an endpoint that allows a consumer to p
 The API is built with these technologies
 
 - NodeJS (for the execution environment)
-- TypeScript (to enable type-safety development and IDE tooling)
-- Express (the framework used to power our API development)
+- TypeScript
+- Express (the framework used to power API development)
 - PostgreSQL (our database server of choice)
 
-The code in its current state should have all you need available to build out the rest of the API. If you need to install additional packages for your assessment that's fine, but your code must use the above tech. Connecting and interacting with the database as needed is up to you.
+The code in its current state should have all you need available to build out the rest of the API. If you need to install additional packages for your assessment that's fine, but your code must use the above tech. Connecting and interacting with the database as needed is up to you. 
+
+**Note:** You'll need a local database server
 
 # Assessment
 
@@ -29,19 +31,20 @@ Please extend the functionality of the API to provide the following features
 
 **Ticketing**
 
-- Expose an endpoint for retrieving all available tickets in the database
-- Add a feature to enable filtering retrieving the details for a specific ticket -- given that you know its ID
+- Expose an endpoint for retrieving all available tickets in the database at `/tickets`
+- Add a feature to enable filtering retrieving the details for a specific ticket -- given that you know its ID. 
+  For example, `/ticket/1`
 
 **Events**
 
-- Expose an endpoint for retrieving all available events in the database
-- Add a feature to enable searching for events that have a given keyword in it's event name
-- Add a feature to enable filtering for events whose category falls within a list of requested event categories
-- Enable filtering for events where the `member_only` field is true/false
-- Enable retrieving the details for a specific event -- given you know its ID
+- Expose an endpoint for retrieving all available events in the database at `/events`
+- Add a feature to enable searching for events that have a given keyword in it's event name like. For example, `/events?search=Barnes`
+- Add a feature to enable filtering for events whose category falls within a list of requested event categories. For example, `/events?category=Exhibitions`
+- Enable filtering for events where the `member_only` field is true/false. For example, `/events?memberOnly=true`
+- Enable retrieving the details for a specific event -- given you know its ID. For example, `/events/3`
 
 **Orders**
-- Expose an endpoint for placing an order. We've provided an example order to denote what the details for an order should look like. 
+- Expose an endpoint for placing an order at `/orders`. We've provided an example order to denote what the details for an order should look like. 
 
   For the purposes of this assessment and to keep things simple, assume that you can only purchase 1 event and 1 ticket type per order, but that you can purchase any number of those tickets (up to the and including the quantity that ticket type allows)
 
@@ -57,11 +60,8 @@ You can begin the assessment as soon as you've been given access to this reposit
 
 You can however push to your own custom repository for version control, and please provide us the following for deliverables
 - The link to your GitHub account containing your finalized code submission
-- A [Postman collection](https://www.postman.com/) of working requests to demonstrate your working API server 
-
-  OR
-  
-  You can also write-up a small NodeJS script that would perform these requests instead. If you opt to go this route, please ensure this script is executable with an `npm` command like `npm run examples`
+- The `npm` command used for starting your server.
+- The JSON body that can be used for placing an order.
 
 Following that, we'll review and reach out about moving forward. We thank you for the time and effort you've taken to reach this step, and for considering The Barnes Foundation.
 
