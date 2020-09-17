@@ -23,7 +23,7 @@ The code in its current state should have all you need available to build out th
 
 This assessment involves adding to the very minimal API server provided in the codebase. You'll be interacting with a database, where you'd be reading and writing information to and from.
 
-We've provided the schema for the database along with the available data you're to work with.
+We've provided the schema for the database along with the available data you're to work with. You can restore this database to your local environment for working with. If the restore gives you an issue, you can also run that script file against your database to get it set up.
 
 Please extend the functionality of the API to provide the following features
 
@@ -36,13 +36,12 @@ Please extend the functionality of the API to provide the following features
 **Events**
 
 - Expose an endpoint for retrieving all available events in the database
-- Add a feature to enable searching for events that have a given keyword in it's event name
 - Add a feature to enable filtering for events whose category falls within a list of requested event categories
-- Enable filtering for events that fall within a provided start and end date range, meaning the start and end date of the event are within that range
+- Enable filtering for events that fall within a start and end date range, meaning the start and end date of the event are within that range
 - Enable retrieving the details for a specific event -- given you know its ID
 
 **Orders**
-- Expose an endpoint for placing an order. We've provided an example order to denote what the details for an order should look like. 
+- Expose an endpoint for placing an order. We've provided an example order to denote what the details for an order should look like and place 1 order against this endpoint
 
   For the purposes of this assessment and to keep things simple, assume that you can only purchase 1 event and 1 ticket type per order, but that you can purchase any number of those tickets (up to the and including the quantity that ticket type allows)
 
@@ -58,11 +57,13 @@ You can begin the assessment as soon as you've been given access to this reposit
 
 You can however push to your own custom repository for version control, and please provide us the following for deliverables
 - The link to your GitHub account containing your finalized code submission
-- A [Postman collection](https://www.postman.com/) of working requests to demonstrate your working API server 
+- A [Postman collection](https://www.postman.com/) of working requests to demonstrate your working API server.
 
   OR
   
   You can also write-up a small NodeJS script that would perform these requests instead. If you opt to go this route, please ensure this script is executable with an `npm` command like `npm run examples`
+
+  Regardless of your approach, there should be a request executed for each of the tasks above, for a total of 8. 
 
 Following that, we'll review and reach out about moving forward. We thank you for the time and effort you've taken to reach this step, and for considering The Barnes Foundation.
 
