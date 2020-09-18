@@ -66,8 +66,6 @@ You can however push to your own custom repository for version control, and plea
 - A list of endpoints where the above functionality is available
 - The JSON body that can be used for placing an order.
 
-  Regardless of your approach, there should be a request executed for each of the tasks above, for a total of 8. 
-
 Following that, we'll review and reach out about moving forward. We thank you for the time and effort you've taken to reach this step, and for considering The Barnes Foundation.
 
 We appreciate the time and effort you set aside for this tech assessment.
