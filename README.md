@@ -4,9 +4,8 @@ This is the repository containing the technical assessment for the position of *
 
 Here we have a codebase meant to simulate powering the backend of an Event Mangament Platform -- a common part of a horticultural organization such as The Barnes Foundation and instituions like it. 
 
-Your task?  To code up a small API that would enable consumers to list available events and ticketing information. 
-
-Along with that, you're asked to provide an endpoint that allows a consumer to place an order of tickets against a particular event.
+Your task? To code up a small API that would enable consumers to list available events and ticketing information. 
+Along with that, an endpoint that allows a consumer to place an order of tickets against a particular event.
 
 # Technology Stack
 
@@ -19,11 +18,11 @@ The API is built with these technologies
 
 The code in its current state should have all you need available to build out the rest of the API. If you need to install additional packages for your assessment that's fine, but your code must use the above tech. Connecting and interacting with the database as needed is up to you. 
 
-**Note:** You'll need a local database server
+**Note:** You'll need a local PostgreSQL database server. See [here](https://www.postgresqltutorial.com/install-postgresql/) for installing on Windows if needed
 
 # Assessment
 
-This assessment involves adding to the very minimal API server provided in the codebase. You'll be interacting with a database, where you'd be reading and writing information to and from.
+This assessment involves adding to the very minimal API server provided in the codebase. You'll be interacting with a database, where you'll be reading and writing information to and from.
 
 We've provided the schema for the database along with the available data you're to work with. You can restore this database to your local environment for working with. If the restore gives you an issue, you can also run that script file against your database to get it set up.
 
@@ -51,6 +50,10 @@ Please extend the functionality of the API to provide the following features
 
 You can read and write to the database, but really, only the orders table needs to be written to. The provided schema is for a PostgreSQL database, and you can use any Node library for connecting to it. 
 
+# Development
+
+To develop the server locally, use `npm run dev`. This command will start the server and automatically reload it when changes to the `src` have been made.
+
 # Submission
 
 Please pull and clone the master branch of this repository. 
@@ -59,17 +62,9 @@ You can begin the assessment as soon as you've been given access to this reposit
 
 You can however push to your own custom repository for version control, and please provide us the following for deliverables
 - The link to your GitHub account containing your finalized code submission
-<<<<<<< HEAD
-- A [Postman collection](https://www.postman.com/) of working requests to demonstrate your working API server.
-
-  OR
-  
-  You can also write-up a small NodeJS script that would perform these requests instead. If you opt to go this route, please ensure this script is executable with an `npm` command like `npm run examples`
-=======
 - The `npm` command used for starting your server.
 - A list of endpoints where the above functionality is available
 - The JSON body that can be used for placing an order.
->>>>>>> 6f7bfa1112f2bd747fa5847845032cb44fd2c26d
 
   Regardless of your approach, there should be a request executed for each of the tasks above, for a total of 8. 
 

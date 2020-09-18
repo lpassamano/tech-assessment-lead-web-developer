@@ -7,7 +7,8 @@
 		"build-server": "tsc -p src/",
 		"watch-and-compile-dev-server": "tsc -w -p src/",
 		"run-dev-server": "nodemon dist/src/app.js",
-		"dev": "concurrently \"npm run watch-and-compile-dev-server\" \"npm run run-dev-server\""
+		"dev": "concurrently \"npm run watch-and-compile-dev-server\" \"npm run run-dev-server\"",
+		"start": "node dist/src/app.js"
 	},
 	"author": "The Barnes Foundation",
 	"license": "ISC",
