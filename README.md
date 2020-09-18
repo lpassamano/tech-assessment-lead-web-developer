@@ -52,7 +52,8 @@ You can read and write to the database, but really, only the orders table needs 
 
 # Development
 
-To develop the server locally, use `npm run dev`. This command will start the server and automatically reload it when changes to the `src` have been made.
+To develop the server locally, run `npm install` to install the needed packages. 
+You can then use `npm run dev`. This command will start the server and automatically reload it when changes to the `src` have been made.
 
 # Submission
 
