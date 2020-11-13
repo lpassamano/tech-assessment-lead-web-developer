@@ -47,7 +47,7 @@ CREATE TABLE public.events (
 );
 
 
-ALTER TABLE public.events OWNER TO cjativa;
+-- ALTER TABLE public.events OWNER TO cjativa;
 
 --
 -- Name: events_id_seq; Type: SEQUENCE; Schema: public; Owner: cjativa
@@ -61,7 +61,7 @@ CREATE SEQUENCE public.events_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.events_id_seq OWNER TO cjativa;
+-- ALTER TABLE public.events_id_seq OWNER TO cjativa;
 
 --
 -- Name: events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cjativa
@@ -85,7 +85,7 @@ CREATE TABLE public.orders (
 );
 
 
-ALTER TABLE public.orders OWNER TO cjativa;
+-- ALTER TABLE public.orders OWNER TO cjativa;
 
 --
 -- Name: orders_id_seq; Type: SEQUENCE; Schema: public; Owner: cjativa
@@ -99,7 +99,7 @@ CREATE SEQUENCE public.orders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.orders_id_seq OWNER TO cjativa;
+-- ALTER TABLE public.orders_id_seq OWNER TO cjativa;
 
 --
 -- Name: orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cjativa
@@ -121,7 +121,7 @@ CREATE TABLE public.tickets (
 );
 
 
-ALTER TABLE public.tickets OWNER TO cjativa;
+-- ALTER TABLE public.tickets OWNER TO cjativa;
 
 --
 -- Name: tickets_id_seq; Type: SEQUENCE; Schema: public; Owner: cjativa
@@ -135,7 +135,7 @@ CREATE SEQUENCE public.tickets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.tickets_id_seq OWNER TO cjativa;
+-- ALTER TABLE public.tickets_id_seq OWNER TO cjativa;
 
 --
 -- Name: tickets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: cjativa

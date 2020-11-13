@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DATABASE_NAME="event_management_dev"
+DATABASE_DUMP="src/database/ticket_order_db.sql"
+DATABASE_USER_NAME="dev"
+DATABASE_USER_PW="development"
+
+if psql -lqt | cut -d \| -f 1 | grep "$DATABASE_NAME"; then
+  echo "Database '$DATABASE_NAME' already exists"
+else
+  psql -c "create database $DATABASE_NAME"
+  echo "Database '$DATABASE_NAME' created"
+  psql $DATABASE_NAME < $DATABASE_DUMP
+  echo "Database restored from '$DATABASE_DUMP'"
+  psql -c "create user ${DATABASE_USER_NAME} with encrypted password '${DATABASE_USER_PW}'"
+  psql -c "grant all privileges on database ${DATABASE_NAME} to ${DATABASE_USER_NAME}"
+  psql $DATABASE_NAME -c "grant all privileges on all tables in schema public to ${DATABASE_USER_NAME};"
+  echo "Created database user: '${DATABASE_USER_NAME}', password: '${DATABASE_USER_PW}'"
+fi
