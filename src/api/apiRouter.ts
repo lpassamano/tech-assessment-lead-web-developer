@@ -1,5 +1,7 @@
 import express from 'express';
-import ticketsController from './controllers/tickets.controller'
+
+import eventsController from './controllers/events.controller';
+import ticketsController from './controllers/tickets.controller';
 
 const apiRouter = express.Router();
 
@@ -13,5 +15,7 @@ const apiRouter = express.Router();
 
 apiRouter.get('/tickets', ticketsController.get)
 apiRouter.get('/tickets/:id', ticketsController.getById)
+
+apiRouter.get('/events', eventsController.get)
 
 export default apiRouter;
