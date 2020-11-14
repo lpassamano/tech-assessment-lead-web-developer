@@ -9,7 +9,17 @@ class EventsController {
         console.log(err)
       }
 
-      res.send(response.rows)
+      if (req.query.keyword) {
+        const keyword = req.query.keyword.toLowerCase()
+        const filteredEvents = response.rows.filter(event => {
+          if (event.event_name.toLowerCase().includes(keyword)) {
+            return event
+          }
+        })
+        res.send(filteredEvents)
+      } else {
+        res.send(response.rows)
+      }
     })
   }
 }
