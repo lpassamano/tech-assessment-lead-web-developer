@@ -17,6 +17,7 @@ apiRouter.get('/tickets', ticketsController.get)
 apiRouter.get('/tickets/:id', ticketsController.getById)
 
 apiRouter.get('/events', eventsController.get)
-apiRouter.get('/events/:category', eventsController.getCategory)
+apiRouter.get('/events/categories/:category', eventsController.getCategory)
+apiRouter.get('/events/:id', eventsController.getById)
 
 export default apiRouter;

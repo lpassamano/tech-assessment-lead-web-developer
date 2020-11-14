@@ -42,6 +42,16 @@ class EventsController {
       res.send(response.rows)
     })
   }
+
+  getById = (req, res) => {
+    db.query('select * from events where id = $1', [req.params.id], (err, response) => {
+      if (err) {
+        console.log(err)
+      }
+
+      res.send(response.rows[0])
+    })
+  }
 }
 
 var eventsController = new EventsController()
