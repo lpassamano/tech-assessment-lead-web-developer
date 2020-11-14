@@ -1,6 +1,7 @@
 import express from 'express';
 
 import eventsController from './controllers/events.controller';
+import ordersController from './controllers/orders.controller';
 import ticketsController from './controllers/tickets.controller';
 
 const apiRouter = express.Router();
@@ -19,5 +20,7 @@ apiRouter.get('/tickets/:id', ticketsController.getById)
 apiRouter.get('/events', eventsController.get)
 apiRouter.get('/events/categories/:category', eventsController.getCategory)
 apiRouter.get('/events/:id', eventsController.getById)
+
+apiRouter.post('/orders', ordersController.create)
 
 export default apiRouter;

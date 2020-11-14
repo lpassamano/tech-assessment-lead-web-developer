@@ -15,5 +15,7 @@ else
   psql -c "create user ${DATABASE_USER_NAME} with encrypted password '${DATABASE_USER_PW}'"
   psql -c "grant all privileges on database ${DATABASE_NAME} to ${DATABASE_USER_NAME}"
   psql $DATABASE_NAME -c "grant all privileges on all tables in schema public to ${DATABASE_USER_NAME};"
+  psql $DATABASE_NAME -c "grant all privileges on all functions in schema public to ${DATABASE_USER_NAME};"
+  psql $DATABASE_NAME -c "grant all privileges on all sequences in schema public to ${DATABASE_USER_NAME};"
   echo "Created database user: '${DATABASE_USER_NAME}', password: '${DATABASE_USER_PW}'"
 fi

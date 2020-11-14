@@ -13,6 +13,7 @@
 	"author": "The Barnes Foundation",
 	"license": "ISC",
 	"dependencies": {
+		"date-fns": "^2.16.1",
 		"express": "^4.17.1",
 		"pg": "^8.5.1"
 	},
