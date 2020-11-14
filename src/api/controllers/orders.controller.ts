@@ -21,10 +21,10 @@ class OrdersController {
             console.log(err)
           }
 
-          res.send(response.rows[0])
+          res.json(response.rows[0])
         })
       } else {
-        res.send({ error: "Ticket quantity exeeds max allowed"})
+        res.json({ error: "Ticket quantity exeeds max allowed"})
       }
     })
   }

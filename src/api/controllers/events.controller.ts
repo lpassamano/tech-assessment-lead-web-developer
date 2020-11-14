@@ -10,7 +10,7 @@ class EventsController {
           console.log(err)
         }
 
-        res.send(response.rows)
+        res.json(response.rows)
       })
     } else {
       db.query('select * from events', (err, response) => {
@@ -25,9 +25,9 @@ class EventsController {
               return event
             }
           })
-          res.send(filteredEvents)
+          res.json(filteredEvents)
         } else {
-          res.send(response.rows)
+          res.json(response.rows)
         }
       })
     }
@@ -39,7 +39,7 @@ class EventsController {
         console.log(err)
       }
 
-      res.send(response.rows)
+      res.json(response.rows)
     })
   }
 
@@ -49,7 +49,7 @@ class EventsController {
         console.log(err)
       }
 
-      res.send(response.rows[0])
+      res.json(response.rows[0])
     })
   }
 }

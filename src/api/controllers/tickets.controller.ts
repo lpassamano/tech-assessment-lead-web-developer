@@ -9,7 +9,7 @@ class TicketsController {
         console.log(err)
       }
 
-      res.send(response.rows)
+      res.json(response.rows)
     })
   }
 
@@ -19,7 +19,7 @@ class TicketsController {
         console.log(err)
       }
 
-      res.send(response.rows[0])
+      res.json(response.rows[0])
     })
   }
 }
