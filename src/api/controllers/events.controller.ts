@@ -22,6 +22,16 @@ class EventsController {
       }
     })
   }
+
+  getCategory = (req, res) => {
+    db.query('select * from events where upper(category) = $1', [req.params.category.toUpperCase()], (err, response) => {
+      if (err) {
+        console.log(err)
+      }
+
+      res.send(response.rows)
+    })
+  }
 }
 
 var eventsController = new EventsController()
